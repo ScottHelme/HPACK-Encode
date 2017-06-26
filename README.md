@@ -14,3 +14,6 @@ To replace this we need to HPACK encode the replacement string. Modify the scrip
     static const u_char nginx[22] = "\x95\xc1\x51\x2c\xf5\x5a\x54\x86\x8a\x14\xdf\x39\x54\xdf\x39\xaa\x99\x1f\xc7\xf1\xfc\x7f";
     
 Replace this in the Nginx source and build.
+
+<br/>
+This script is based off the StackOverflow answer provided [here](https://stackoverflow.com/questions/35655448/how-does-this-code-result-in-the-string-nginx/36890013#36890013).
