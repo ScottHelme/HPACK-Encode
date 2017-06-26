@@ -16,4 +16,4 @@ To replace this we need to HPACK encode the replacement string. Modify the scrip
 Replace this in the Nginx source and build.
 
 <br/>
-This script is based off the StackOverflow answer provided [here](https://stackoverflow.com/questions/35655448/how-does-this-code-result-in-the-string-nginx/36890013#36890013).
+This script is based off the StackOverflow answer provided <a href="https://stackoverflow.com/questions/35655448/how-does-this-code-result-in-the-string-nginx/36890013#36890013">here</a>.
