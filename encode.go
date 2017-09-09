@@ -3,11 +3,12 @@ package main
 import (
     "fmt"
     "golang.org/x/net/http2/hpack"
+    "os"
     "strconv"
 )
 
 func main() {
-    fmt.Println(Encode("Encrypt All The Things!!!"))
+    fmt.Println(Encode(os.Args[1]))
 }
 
 func Encode(s string) string {
