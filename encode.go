@@ -27,12 +27,6 @@ func Encode(s string) string {
     return "static const u_char nginx[" + strconv.Itoa(count + 1) + "] = \"" + string(result) + "\";"
 }
 
-func Decode(s string) string {
-    data := []byte(s)
-    result, _ := hpack.HuffmanDecodeToString(data[1:])
-    return result
-}
-
 func RenderByte(b byte) string {
     return fmt.Sprintf("\\x%x", b)
 }
