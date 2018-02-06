@@ -6,12 +6,13 @@ The Nginx source contains the Server header "nginx" when using HTTP/2:
 
     static const u_char nginx[5] = "\x84\xaa\x63\x55\xe7";
 
-It can be seen here: https://trac.nginx.org/nginx/browser/nginx/src/http/v2/ngx_http_v2_filter_module.c#L146
+It can be seen here: https://trac.nginx.org/nginx/browser/nginx/src/http/v2/ngx_http_v2_filter_module.c#L148
 
 <br/>
 To replace this we need to HPACK encode the replacement string.
 
 Run the script with your desired Server header as the argument, and it will output the required line of code.
+If you get dependency errors, it may be necessary to run 'go get golang.org/x/net/http2/hpack' first.
 
 For example, running the script with `go run encode.go 'Encrypt All The Things!!!'` will output the following:
 
